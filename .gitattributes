@@ -1,0 +1,6 @@
+*.md text=auto eol=lf
+
+*.sh text=auto eol=lf
+*.bat text=auto eol=crlf
+
+build.zig text=auto eol=lf

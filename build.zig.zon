@@ -1,0 +1,17 @@
+.{
+    .name = .nimbledb,
+    .version = "0.0.1",
+    .fingerprint = 0x7434b3d81f9157f3, // Changing this has security and trust implications.
+    .minimum_zig_version = "0.15.1",
+    .dependencies = .{
+        // Do not use dependencies for this project.
+        // If you think there is something to add here, it is not.
+    },
+    .paths = .{
+        "src",
+        "LICENSE",
+        "README.md",
+        "build.zig",
+        "build.zig.zon",
+    },
+}
