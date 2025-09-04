@@ -9,6 +9,10 @@ pub fn build(b: *std.Build) void {
         .optimize = optimize,
         .root_source_file = b.path("src/root.zig"),
     });
+    lib_module.link_libc = true;
+    lib_module.addIncludePath(b.path("src"));
+    lib_module.addCSourceFiles(.{ .files = &.{ "./src/lmidl.c", "./src/lmdb.c" } });
+
     const cli_module = b.createModule(.{
         .target = target,
         .optimize = optimize,
